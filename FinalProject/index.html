@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Honor Code: I acknowledge that this code represents my own work: 
+Initials: MJR   
+Date: December 4th, 2018
+-->
+<meta charset="UTF-8" />
+<meta name="author" content="Mason Rich" />
+<meta name="description" content="Final Project main page" />
+<meta name="keywords" content="Final Project" />
+    
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+<!-- My style sheet -->
+<link href="styles/rpsstyles.css" rel="stylesheet" type="text/css" />
+    
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Frijole|Metal+Mania|Roboto|Shadows+Into+Light" rel="stylesheet">
+
+<title>Rock, Paper, Scissors</title> 
+</head>      
+   <body>
+       
+       <!-- Jumbo Tron -->
+       <div class="jumbotron">
+           <h1><font id="fontRock">Rock</font>, <font id="fontPaper">Paper</font>, <font id="fontScissors">Scissors</font></h1>
+           <h3 id="chooseGameMode"><strong>Choose a game mode: </strong></h3>
+       </div>
+       
+       <div class="row">
+           
+          <!-- classic mode -->
+          <section class="col-sm-4 col-md-4 col-xs-12 col-lg-4 col-xl-4">
+             <hr>
+             <button class="center-block" onclick="window.location.href='rps1.html'">Classic</button>
+             <hr>
+             <p>Beat the CPU in a classic game of Rock, Paper, Scissors. You will specify the amount of rounds that are to be played.</p>
+          </section>
+           
+          <!-- countdown mode -->   
+          <section class="col-sm-4 col-md-4 col-xs-12 col-lg-4 col-xl-4">
+             <hr>
+             <button class="center-block" onclick="window.location.href='rps2.html'">Countdown</button>
+             <hr>
+             <p>Earn points based on selecting the correct answer as the CPU tells you to win or lose against their choice. 10 points are rewarded for correct answers and -20 points for incorrect answers. You will have 30 seconds to get as many points as possible. Good luck!</p>
+          </section>
+          
+          <!-- Gamble mode -->   
+          <section class="col-sm-4 col-md-4 col-xs-12 col-lg-4 col-xl-4">
+             <hr>
+             <button class="center-block" onclick="window.location.href='rps3.html'">Gamble</button>
+             <hr>
+             <p>Play classic Rock, Paper, Scissors but while placing bets at the beginning of each round. You will start out with $100, but be careful: if the round results in a tie, you must bet double the amount from the previous round.</p>
+          </section>
+       </div>
+
+       
+      
+   </body>
+
+</html>

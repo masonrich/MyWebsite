@@ -1,0 +1,150 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>DOM CSS</title>
+ 
+    <script>
+        function FormatPage(){
+                    
+            //BG color
+            var changeBG = document.getElementById("BGColor")
+            document.body.style.backgroundColor = changeBG.value
+            
+            //FG color
+            var changeFG = document.getElementById("FGColor")
+            document.body.style.color = changeFG.value
+            
+            //Font family
+            var fontSelect = document.getElementsByName("Face")
+            for(var i = 0; i < fontSelect.length; i++)
+            {
+                if (fontSelect[i].type == 'radio' && fontSelect[i].checked) 
+                {
+                    document.body.style.fontFamily = fontSelect[i].value
+                }
+                    
+            }
+            
+            //font size
+            var sizeFont = document.getElementById("Size")
+            document.body.style.fontSize = sizeFont.value
+            
+            //bold, italics, underline
+            
+            if(document.getElementById("Style0").checked)
+                {
+                    document.body.style.fontWeight = "Bold"  
+                }
+            if(document.getElementById("Style1").checked)
+                {
+                    document.body.style.fontStyle = "italic"
+                }      
+            if(document.getElementById("Style2").checked)
+                {
+                    document.body.style.textDecoration = "underline"
+                }
+            
+        }
+    
+    </script>
+    
+</head>
+<body>
+
+<p>
+Background Color:
+
+<select id="BGColor">
+
+<option value="#FFFFFF">White</option>
+
+<option value="#000000">Black</option>
+
+<option value="#FF0000">Red</option>
+
+<option value="#008800">Green</option>
+
+<option value="#0000FF">Blue</option>
+
+<option value="#F08080">Light Coral</option>
+
+<option value="#ADD8E6">Light Blue</option>
+
+<option value="#90EE90">Light Green</option>
+
+</select>
+
+<br/>
+
+Foreground Color:
+
+<select id="FGColor">
+    
+<option value="#000000">Black</option>
+    
+<option value="#FFFFFF">White</option>
+
+<option value="#FF0000">Red</option>
+
+<option value="#008800">Green</option>
+
+<option value="#0000FF">Blue</option>
+
+<option value="#F08080">Light Coral</option>
+
+<option value="#ADD8E6">Light Blue</option>
+
+<option value="#90EE90">Light Green</option>
+
+</select>
+
+<br/><br/>
+
+Text Face:<br/>
+
+<input type="radio" id="Face0" name="Face" value="times new roman" checked="checked" />Times New Roman<br/>
+
+<input type="radio" id="Face1" name="Face" value="arial"/>Arial<br/>
+
+<input type="radio" id="Face2" name="Face" value="courier new"/>Courier New<br/>
+
+<input type="radio" id="Face3" name="Face" value="comic sans ms"/>Comic Sans MS<br/>
+
+<input type="radio" id="Face4" name="Face" value="verdana"/>Verdana<br/>
+
+<br/>
+
+Text Size:
+
+<select id="Size">
+
+<option value="9pt">9 pt</option>
+
+<option value="10pt">10 pt</option>
+
+<option value="12pt" selected="selected">12 pt</option>
+
+<option value="14pt">14 pt</option>
+
+<option value="16pt">16 pt</option>
+
+</select>
+
+<br/><br/>
+
+Text Style:<br/>
+
+<input type="checkbox" id="Style0" />Bold
+
+<input type="checkbox" id="Style1" />Italic
+
+<input type="checkbox" id="Style2" />Underline<br/>
+
+<br/>
+
+<input type="button" value="Format" onclick = "FormatPage()" />
+</p>
+
+  
+</body>
+</html>

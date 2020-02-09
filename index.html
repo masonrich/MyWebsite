@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Honor Code: I acknowledge that this code represents my own work: 
+Initials: MJR    
+Date: October 1, 2018
+-->
+<meta charset="UTF-8" />
+<meta name="author" content="Mason Rich" />
+<meta name="description" content="Midterm Project CS 2350" />
+<meta name="keywords" content="Midterm, CS 2350, Project, Assignment" />    
+<!-- scaling for devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
+<!-- link for glyphicons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<!-- Link for google font -->
+<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+
+    <!-- My style sheet -->
+<link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    
+
+    
+<title>Mason's Home Page</title> 
+</head>      
+   <body> 
+       <nav class="navbar navbar-expand-md">
+           
+           <!-- BUTTON FOR SMALL SCREENS -->
+           <button id="menubut" class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+              <span><i class="fa fa-bars"></i></span>
+           </button>
+           
+           <div class="collapse navbar-collapse" id="collapse_target">
+              <a href="index.html" class ="navbar-brand">
+                   <span class="fa fa-home" active="active" aria-hidden="true"></span>
+              </a>
+                     
+           <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="Portfolio.html" >Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="hobbies.html" >Hobbies</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html" >Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/mason-rich-02732214a/"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/mason.rich.3" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            </ul> 
+            </div>
+       
+       </nav>
+         
+       <section class="container">
+                   
+               <div class="row" id="mepic">
+                    <section>                     
+                        
+                            <img src="images/meWedding.jpg" alt="Pic of me at wedding">
+                                       
+                    </section>  
+               </div>
+           
+           
+               <div class="row" id="rowsize">
+                   
+                   <!-- left side -->
+                   <section id="leftside" class="col-sm-6 col-md-6 col-xs-12 col-lg-6 col-xl-6">
+                       <div>
+                          <h3>About Me</h3>
+                           <hr>
+                           <p>I am a computer science major at Weber State University from South Ogden, Utah. I have a passion for developing and I am studying to become a software engineer. I have a minor in Spanish and will graduate with a bachelor's degree in computer science in Spring of 2020. Following graduation I plan to get a master's degree in business administration. I am currently a Software QA Engineer for Wex, Inc. Please look around this website to find out more about me!</p>
+                        </div>
+                   </section>
+                   
+                   <!-- Right side -->
+                   <section id="rightside" class="col-sm-6 col-md-6 col-xs-12 col-lg-6 col-xl-6">
+                         <article>
+                             <h3>Why Choose Me</h3>
+                             <hr>
+                                <div>
+                                    <p>Teamwork over ego. Dedicated and dependable hard worker who adapts well to new cultures with minimal supervision. Ethical problem solver and attentive listener that pursues and reaches goals.</p>
+                                    <p><strong>Technical Summary/Exposure:</strong> Java, C++, C#, C, ROBOT, JavaScript, SQL HTML, CSS, jQuery, php, python </p>
+                                    <p>To see my full resume and experience, navigate to my LinkedIn profile by clicking the "in" button located on the top of the page.</p>   
+                                </div>
+                         </article>
+                   </section>
+                   
+               </div>
+     
+       </section>
+       
+       <footer>
+       
+       </footer>
+
+        <script src="js/jquery.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            //sortable assignment table
+            $("#sortable").sortable();
+            
+            //make name disappear when button is clicked
+            $("#menubut").click(function(){
+            $("#myintro").toggle();
+            })
+ 
+        </script>
+   </body>
+
+</html>

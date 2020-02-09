@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Honor Code: I acknowledge that this code represents my own work: 
+Initials: MJR    
+Date: October 29, 2018
+-->
+<meta charset="UTF-8" />
+<meta name="author" content="Mason Rich" />
+<meta name="description" content="Assignment 7, part II" />
+<meta name="keywords" content="Assignment 7, CS 2350, loops, JS" />
+    
+    <script>
+        function buildRows()
+        {
+            //do this loop while conditions are met 
+            do
+            {
+                var userNum = prompt("Please input a number")      
+            } while (userNum < 1 || userNum % 1 != 0 || Number.isInteger(false))
+            
+            document.write("<table style='border: 1px solid black'>")    
+                
+            for (var i = 1; i <= userNum; i++)
+            {
+                if (i % 2 == 0)
+                {  
+                   document.write("<tr><td style='background-color: #191970; color: white;'>ROW " + i + "</td></tr>")       
+                }
+                else
+                {
+                   document.write("<tr><td style='color: 191970' >ROW " + i + "</td></tr>")   
+                }
+                
+            }
+            
+            document.write("</table>") 
+  
+        }
+    
+    </script>
+
+<title>Assignment 7 part II</title> 
+</head>      
+   <body>
+       <button type="button" onclick="buildRows()">Click Me to Make Rows</button>
+       <p><a href="jsTimeDemo.html">Time Demo</a></p> 
+       <p><a href="shoppingCart.html">Shopping Cart Demo</a></p> 
+   </body>
+
+</html>

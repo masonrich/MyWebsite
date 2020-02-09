@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Honor Code: I acknowledge that this code represents my own work: 
+Initials: MJR    
+Date: November 26th, 2018
+-->
+<meta charset="UTF-8" />
+<meta name="author" content="Mason Rich" />
+<meta name="description" content="Assignment 10" />
+<meta name="keywords" content="A10, CS 2350, jQuery" />
+ 
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">      
+    <style>
+        
+        /* size of boxes */
+        div {
+            width: 100px;
+            height: 100px;
+            display: block;
+        }
+        button {
+            display: block;
+            margin: 15px 5px;
+        }
+        
+        /* color of boxes */
+        
+        #div1 {
+            background-color: cadetblue
+        }
+        #div2 {
+            background-color:bisque
+        }
+        #div3 {
+            background-color:coral
+        }
+        #div4 {
+            background-color:firebrick
+        }
+        #div5 {
+            background-color:forestgreen
+        }
+        
+
+    
+    </style>
+
+<title>jQuery Effects</title> 
+    
+    
+    
+</head>      
+   <body>
+       <div id="div1"></div>
+       <button id="but1">Toggle fold</button>
+       <div id="div2"></div>
+       <button id="but2">Toggle slide</button>
+       <div id="div3"></div>
+       <button id="but3">Toggle scale</button>
+       <div id="div4"> </div>
+       <button id="but4">Toggle explode</button>
+       <div id="div5"></div>
+       <button id="but5">Change size</button>
+           
+<script>
+    
+//toggle the fold effect
+$("#but1").click(function() {
+  $( "#div1" ).toggle("fold");    
+});
+//toggle the slide effect
+$("#but2").click(function() {
+  $("#div2").toggle("slide");    
+});
+//toggle the scale effect
+$("#but3").click(function() {
+  $( "#div3" ).toggle("scale");    
+});
+//toggle the explode effect
+$("#but4").click(function() {
+  $( "#div4" ).toggle("explode", {pieces: 125}, 2000);    
+});
+//size effect
+$("#but5").click(function() {
+  $( "#div5" ).effect("size", {to: {width: 400, height: 400}}, 1500);    
+});
+    
+</script>  
+       
+   </body>
+
+</html>

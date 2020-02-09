@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<!-- scaling for devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<!-- My style sheet -->
+<link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    
+<!-- link for glyphicons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<!-- Link for google font -->
+<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+  
+<script>
+
+       $(function(){
+       $("#accordion").accordion({    
+           heightStyle: "content",
+           collapsible: true
+       });
+           
+   });
+</script>
+<style type="text/css">
+    
+    /* make arrows turn on accordion */
+    .ui-state-active i {
+        -webkit-transform:rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform:rotate(180deg);
+        -ms-transform:rotate(180deg);
+        transform:rotate(180deg);
+    }
+
+    .ui-accordion-header {
+        background: rgb(210, 101, 47);
+        border-radius: 2px;
+    }
+    .ui-accordion-content {
+        background-color: rgb(0, 0, 0, .55);
+        color: white;
+        padding: 10%;
+    }
+    #accordion h3 {
+        color: white;
+        padding-left: 10px;
+    }
+    
+    /* selectable styles jquery */
+    #selectable .ui-selecting {
+    background: rgb(210, 101, 47);
+    }
+    #selectable .ui-selected {
+    background: rgb(210, 101, 47);
+    }
+    #selectable1 .ui-selecting {
+    background: rgb(210, 101, 47);
+    }
+    #selectable1 .ui-selected {
+    background: rgb(210, 101, 47);
+    }
+    #selectable2 .ui-selecting {
+    background: rgb(210, 101, 47);
+    }
+    #selectable2 .ui-selected {
+    background: rgb(210, 101, 47);
+    }
+    #selectable3 .ui-selecting {
+    background: rgb(210, 101, 47);
+    }
+    #selectable3 .ui-selected {
+    background: rgb(210, 101, 47);
+    }
+    #selectable4 .ui-selecting {
+    background: rgb(210, 101, 47);
+    }
+    #selectable4 .ui-selected {
+    background: rgb(210, 101, 47);
+    }
+    #selectable5 .ui-selecting {
+    background: rgb(210, 101, 47);
+    }
+    #selectable5 .ui-selected {
+    background: rgb(210, 101, 47);
+    }
+    div div ul li a {    
+    color: rgb(160,160,160);
+    text-decoration: none; 
+    }
+    div div ul li a:hover {    
+    color: rgb(178,216,216);
+    text-decoration: none; 
+    }
+    
+    #div1, #div2, #div3, #div4 {
+        background-color: rgb(0, 0, 0);
+        opacity: .65;
+    }
+
+</style>
+    
+<title>Portfolio</title> 
+</head>      
+   <body id="backtotop"> 
+       <nav class="navbar navbar-expand-md">
+           
+           <!-- BUTTON FOR SMALL SCREENS -->
+           <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+              <span><i class="fa fa-bars"></i></span>
+           </button>
+           
+           <div class="collapse navbar-collapse" id="collapse_target">
+              <a href="index.html" class ="navbar-brand">
+                   <span class="fa fa-home" active="active" aria-hidden="true"></span>
+              </a>
+                     
+           <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="Portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/mason-rich-02732214a/" target="_blank"><i class="fa fa-linkedin"></i>      </a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/mason.rich.3" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            </ul> 
+            </div>
+       
+       </nav>
+
+       <br>
+       
+       <section>
+       <div id ="accordion">
+           <h3>Assignments / Projects <i class="fa fa-angle-down"></i></h3>
+           <div id="div1">
+               
+              <h5>Projects on GitHub</h5>
+              <ul id="sortable">
+                  <li><a href="https://github.com/masonrich/Project_EgyptianRatscrew_Node" target="_blank">Egyptian Ratscrew (Node, Socket.io, php)</a></li>
+                  <li><a href="https://github.com/masonrich/Project_TypingGame" target="_blank">Typing Game (JavaScript, php)</a> - <a href="https://typegamertype.000webhostapp.com/index.php" target="_blank">Play here</a></li>
+                  <li><a href="https://github.com/masonrich/Project_WeatherAPI" target="_blank">Weather API (C#)</a></li>
+              </ul>
+               
+              <h5>Web Development</h5>
+              <ul id="sortable">
+                  
+                 <!--Web Development Assignments -->
+                  
+                 <li><a href="FinalProject/index.html" target="_blank">Rock, Paper, Scissors (jQuery and javaScript)</a></li>
+                 <!--<li>A1 &mdash; Basic Home Page and <a href="A1/answers.html">Answers</a></li>-->
+                 <!--<li>A2 &mdash; Images, Hyperlinks, and <a href="A2/index.html">Styles</a></li>-->
+                 <!--<li>A3 &mdash; <a href="A3/index.html">Tables,</a> <a href="A3/indextwo.html">Styles</a> and <a href="A3/CSS3/css3.html">CSS3</a></li>-->
+                 <li><a href="A4/index.html">Billing Forms (Advanced CSS)</a></li>
+                 <li><a href="A5/index.html">CSS page layout</a></li>
+                 <!--<li>A6 &mdash; <a href="A6/mathApp.html">JavaScript</a> Basics</li>-->
+                 <!--<li>A7 &mdash; <a href="A7/shoppingCart.html">JavaScript</a> <a href="A7/jsLoopDemo.html">Looping</a> and <a href="A7/jsTimeDemo.html">Arrays</a></li>-->
+                 <!--<li>Timed Quiz(<a href="A8/oae.html">JavaScript</a>)</li>-->
+                 <li><a href="A8/domcss.html">CSS/Document Object Model</a></li>
+                 <!--<li>A9 &mdash; JavaScript <a href="A9/partA/election.htm">part 1</a> and <a href="A9/partB/exp.htm">part 2</a></li>-->
+                 <!--<li>A10 &mdash; jQuery features and <a href="A10/effects.html" target="_blank">effects</a></li>-->
+                 
+              </ul>
+           </div>
+           <h3>Education <i class="fa fa-angle-down"></i></h3>
+           <div id="div2">
+               
+              <h5>Weber State University (2017 - Present)</h5>
+              <ul id="selectable">
+                  <li>B.S. Degree in Computer Science</li>
+                  <li>Minor in Spanish</li>
+                 <li>3.85 GPA</li>
+                 <li>Honors/High Honors Award Fall 2017 - Spring 2020</li>
+              </ul>
+              
+              <h5>Snow College (2015 - 2017)</h5>
+              <ul id="selectable1">
+                 <li>A.A. Degree</li>
+                 <li>3.71 GPA</li>
+                 <li>Men's basketball scholarship</li>
+                 <li>Dean's List 2015 - 2017</li>
+              </ul>
+           </div>
+           <h3>Work Experience <i class="fa fa-angle-down"></i></h3>
+           <div id="div3">
+              <h5>Software QA Engineer (Full-Time)</h5>
+              <p>Wex, Inc.<p>
+              <p>(02/2019 - Present)<p>
+              <ul id="selectable2">
+                 <li>Team member on the Systems Team as part of a Scaled Agile Framework (SAFe) for software development. Writing and thoroughly executing test cases in front end environments and back end environments. (Environments are both white box and black box on Linux servers and Docker containers)</li>
+                 <li>Conduct database changes and validation of data with writing queries for Informix, MySQL, and Oracle Databases.</li>
+                 <li>Create Automation of manual test cases in a Python based .robot framework for regression testing of code for software releases in the Systems Integrated Testing environments (SIT) and the Development Integrated Testing (DIT) environments.</li>
+              </ul>
+               
+              <h5>Registered Behavior Technician (Part-Time)</h5>
+              <p>Utah Behavior Services<p>
+              <p>(05/2017 - 12/2018)<p>
+              <ul id="selectable2">
+                 <li>Provide therapy sessions for kids 2-18 years old with autism and mental-health disorders. </li>
+                 <li>Coordinate with staff members and supervisors by implementing behavior intervention plans in order to help improve behaviors </li>
+              </ul>
+              
+              <h5>Construction Assistant(Part-Time)</h5>
+              <p>CF Olsen Homes<p>
+              <p>(Summer 2016)</p>
+              <ul id="selectable3">
+                 <li>Worked in a team and assisted in the construction and installation of cabinet projects throughout northern Utah </li>
+              </ul>
+           </div>
+           <h3>Volunteer Work <i class="fa fa-angle-down"></i></h3>
+           <div id="div4">
+              <h5>Church Service</h5>
+              <p>(08/2017 - Present)</p>
+              <ul id="selectable4">
+                 <li>Prepare and teach weekly lessons to young men and young women</li>
+              </ul>
+              
+              <h5>Missionary for the Church of Jesus Christ of Latter-Day Saints</h5>
+              <p>(07/2013 - 07/2015)</p>
+              <ul id="selectable5">
+                 <li>Community service projects 3-4 hours each week</li>
+                 <li>Served in various leadership positions, being held accountable for and instructing other missionaries to implement new techniques for teaching on a weekly basis</li>
+              </ul>  
+           </div>
+
+       </div>
+       </section>
+       <footer>
+       <a href="#backtotop">Go Back</a>
+       </footer>
+           
+        <script src="js/jquery.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $( "#selectable" ).selectable();
+            $( "#selectable1" ).selectable();
+            $( "#selectable2" ).selectable();
+            $( "#selectable3" ).selectable();
+            $( "#selectable4" ).selectable();
+            $( "#selectable5" ).selectable();
+        </script>
+   </body>
+
+</html>

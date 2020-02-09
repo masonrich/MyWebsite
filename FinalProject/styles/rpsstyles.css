@@ -1,0 +1,93 @@
+/* highlight image that user picks */
+img.userChoice {
+    border: 5px double rgb(119,136,153);   
+}
+
+/* make images all same size */
+img {
+    width: 145px;
+    height: 175px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* center align all  */
+h1, h2, h3, #compPic1, button, h4, #showTime, p{
+    margin: 20px auto;
+    text-align: center;
+}
+
+h4 {
+    display: block;
+}
+
+/* set font style to whole body */
+body {
+    background-color:white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* set jumbotron background image and size */
+.jumbotron {
+  background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0447/8856/Rock_Paper_Scissors-Pencil_mirror.png");
+  background-size: cover;
+}
+
+/* center align text and user choice pic */
+#userPic, #userChoiceText {
+    text-align: center;
+}
+
+/* center align text and comp choice pic */
+#compPic, #compChoiceText {
+    text-align: center;
+}
+
+/* make a class so you can only click picture once */
+.clickOnce {
+    pointer-events: none
+}
+
+/* timer color */
+#showTime {
+    color: rgb(178,34,34);
+    font-size: 2.5em;
+}
+
+/* points color and size */
+#showScore {
+    color: rgb(46,139,87);
+    font-size: 2.5em; 
+}
+
+/* rock font */
+#fontRock {
+   font-family: 'Frijole', cursive; 
+}
+
+/* paper font */
+#fontPaper {
+   font-family: 'Shadows Into Light', cursive;
+}
+
+/* scissors font */
+#fontScissors {
+   font-family: 'Metal Mania', cursive;
+}
+
+#chooseGameMode {
+    text-shadow: 5px 5px 5px rgb(220,220,220);
+}
+
+button:hover {
+    background-color: rgb(175,238,238);
+}
+
+button, p, #chooseGameMode {
+    font-family: monospace;
+}
+
+p {
+    margin: 5px 25px;
+    text-align: left;
+}

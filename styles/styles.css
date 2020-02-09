@@ -1,0 +1,519 @@
+/* details for the "HOME" glyphicon */
+
+div a span.fa.fa-home {
+    color: white;
+    font-size: 130%;
+    text-shadow: 1px 1px 5px black;
+}
+
+div a span.fa.fa-home:hover {
+    color: rgb(178,216,216);
+}
+
+/* Navbar background */
+
+nav.navbar  { 
+    background-color: transparent;    
+}
+
+/* style for the menu button */
+ i.fa {
+    color: rgb(255, 255, 255, .75);
+}
+
+ul li i.fa:hover {
+    color: rgb(178,216,216);
+}
+
+/* styles for nav bar text */
+
+a.nav-link {
+    float: right;
+    color: rgb(255, 255, 255);
+    font-size: 105%;
+    text-shadow: 1px 1px 5px black;
+}
+
+body nav div ul li a:hover {
+    color: rgb(178,216,216);
+}
+
+body {
+    background-color: rgb(255, 255, 255);  
+    background: url(../images/treeview2.jpeg) no-repeat center center fixed;
+    /* wallpaper found at wallhere.com/aerial-view-trees */
+    background-size: cover;
+    width: 58%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Hind', sans-serif;
+}
+
+/* styles for left and right sections */
+
+section #leftside {
+    background-color: rgb(210, 101, 47); 
+    color: rgb(48,48,48);
+    text-align: left;  
+}
+
+section #leftside div {
+    margin: 12px;
+}
+
+section #leftside h3 {
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 8%;
+}
+
+section #leftsidehobby {
+    background-color: rgb(210, 101, 47); 
+    color: rgb(48,48,48);
+    text-align: left;  
+}
+
+section #leftsidehobby h3 {
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 8%;
+}
+
+#bottomhobby  {
+    background-color: rgb(0, 0, 0, .65);
+    height: 40%;
+    width: 100%;
+}
+
+figure h3 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 0px;
+}
+
+section #rightside h3 {
+    color: rgb(210, 101, 47); 
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 0px;
+}
+
+div img {
+    width: 100%;
+    height: 100%;
+}
+
+section leftside ul li {
+    list-style-type:  none;
+    text-align: left;
+    padding: 0;
+    color: white;
+    margin-bottom: 10%;
+    text-indent: none;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    margin: 0px auto;
+}
+
+footer a:hover {
+    color: rgb(178,216,216);
+   text-decoration: none;
+}
+
+/* Styles for picture scroll/image sizes */
+
+figure {
+    display: block;
+    float: left;
+    clear: left;
+    height: 100%;
+    width: 100%;
+}
+
+figure div {
+    overflow: scroll;
+    white-space: nowrap;
+    height: 100%;
+    width: 100%;
+    margin-top: 12%;   
+}
+
+figure div img {   
+    height: 100%;
+    width: 100%;
+    margin: 0px 5px;   
+}
+
+#jane1 {
+    width: 300px;
+    height: 300px;
+}
+
+#jane2 {
+    width: 250px;
+    height: 300px;
+}
+
+#jane3 {
+    width: 233px;
+    height: 300px;
+}
+
+#jane4 {
+    width: 450px;
+    height: 300px;
+}
+
+#jane5 {
+    width: 200px;
+    height: 300px;
+}
+
+#fishing {
+    width: 250px;
+    height: 300px;
+}
+
+#snowBall {
+    width: 198px;
+    height: 300px;
+}
+
+#snowBall2 {
+    width: 205px;
+    height: 300px;
+}
+
+/* HR styles */
+
+div hr { 
+   width: 20%;
+   height: 20px;
+   border-top: 1px solid rgb(255, 255, 255);
+}
+
+hr.hrtop {
+    width: 20%;
+    height: 20px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-top: none;
+}
+
+section #rightside {
+    background-color: rgba(0, 0, 0, .65);  
+    visibility: visible
+}
+
+section #rightside article {
+    margin: 12px;
+}
+
+section #rightside article h3 {
+    color: rgb(210, 101, 47); 
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 8%;
+}
+
+section #rightside article hr {
+   color: rgb(210, 101, 47); 
+   width: 20%;
+   border-top: 1px solid rgb(210, 101, 47);
+   height: 20px;
+}
+
+form fieldset hr { 
+   width: 20%;
+   border-top: 1px solid rgb(210, 101, 47);
+   height: 0px;
+}
+
+/* styles for the assignment list */
+
+section #rightside article ul {
+    list-style-type:  none;
+    text-align: left;
+    padding: 0;
+    color: white;
+    margin-bottom: 10%;
+}
+
+section #rightside article ul li a, #emailme {
+    color: rgb(160,160,160);
+}
+
+section #rightside article ul li a:hover, #emailme:hover{
+    /* color: rgb(210, 101, 47); */
+    color: rgb(178,216,216);
+    text-decoration: none;
+}
+
+/* main image size */
+section div section h1 img {
+    width: 100%;
+}
+
+section div#mepic {
+    margin: none;
+}
+
+/* space on the bottom of the page*/
+#rowsize {
+    margin-bottom: 5%;
+}
+
+footer {
+    padding: 7%;
+}
+
+section article h5, section article p {
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+/* Introduction text "Hello, I am Mason Rich" 
+
+#myintro {
+    position: absolute;
+    top: 110px;
+    left: 26%;
+    width: 48%;
+
+    text-align: left;
+    font-family: 'serif', 'Hind', 'sans-serif';
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px black;
+}
+
+#myintro {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px black;
+} */
+
+/* Message form styles*/
+label { 
+   clear: left; 
+   display: block; 
+   float: left; 
+   font-size: 0.9em; 
+   margin: 7px 4% 7px 5px; 
+   width: 40%; 
+   color: rgb(255, 255, 255);
+}
+
+input:focus, textarea:focus, input[type="submit"]:hover { 
+   background-color: rgb(178,216,216); 
+}
+
+input, textarea {
+   font-size: 0.9em; 
+   margin: 7px 0px; 
+   width: 100%; 
+}
+
+form fieldset legend {
+    color: rgb(210, 101, 47);
+    padding-top: 12%;
+    text-align: center;
+    
+}
+
+input[type="submit"] { 
+   display: block; 
+   float: none; 
+   height: 25px; 
+   width: 40%; 
+   margin: 0px auto 10% auto;
+   text-align: center;
+   border-radius: 6px;
+   background-color: rgb(255, 255, 255)
+}
+
+th, td {
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid white;
+    margin: auto;  
+}
+
+body div img #imagemap {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section div p a {
+    color: rgb(160,160,160);
+}
+
+section div p a:hover {
+   color: rgb(178,216,216);
+   text-decoration: none; 
+}
+
+/* TEXT SIZE ADJUSTMENTS FOR MAIN PAGE*/
+
+ 
+@media (min-width: 0px) {  
+  #myintro  span {font-size: 0.6rem;} 
+}
+
+
+@media (min-width: 544px) {  
+  #myintro  span {font-size: 0.8rem;} 
+}
+ 
+
+@media (min-width: 768px) {  
+  #myintro  span {font-size: 1.1rem;} 
+}
+ 
+
+@media (min-width: 992px) { 
+  #myintro  span {font-size: 1.35rem;} 
+}
+
+
+@media (min-width: 1200px) {  
+  #myintro  span {font-size: 1.65rem;}     
+} 
+
+/* text size for extra small screens */
+@media (min-width: 0px) {  
+  #myintro {font-size:1.0rem;} 
+}
+
+/* text size for small screens */
+@media (min-width: 544px) {  
+  #myintro {font-size:1.5rem;} 
+}
+ 
+/* text size for medium screens */
+@media (min-width: 768px) {  
+  #myintro {font-size:2rem;} 
+}
+ 
+/* Text size for Large screens */
+@media (min-width: 992px) { 
+  #myintro {font-size:2.5rem;} 
+}
+
+/* text size for Extra large screens */
+@media (min-width: 1200px) {  
+  #myintro {font-size:3rem;}     
+}
+
+/* text size for h3 section left */
+@media (min-width: 576px) {  
+  section#rightside article h3 {font-size:1.5rem;}     
+}
+
+/* text size for h3 section left */
+@media (min-width: 740px) {  
+  section#rightside article h3 {font-size:2rem;}     
+}
+
+/* text size for h3 section right */
+@media (min-width: 576px) {  
+  div section#leftside div h3 {font-size:1.5rem;}     
+}
+
+/* text size for h3 section right */
+@media (min-width: 740px) {  
+  div section#leftside div h3 {font-size:2rem;}     
+}
+
+/* text size for form under contact */
+@media (min-width: 576px) {  
+  form fieldset legend {font-size:1.5rem;}     
+}
+
+/* text size for form under contact */
+@media (min-width: 740px) {  
+  form fieldset legend {font-size:2rem;}     
+}
+
+/* Table text sizes */
+
+@media (min-width: 440px) {  
+  th, td {font-size:.74rem;}     
+}
+
+@media (min-width: 755px) {  
+  th, td {font-size:1rem;}     
+}
+
+/******************** PRINT **********************/
+
+@media print {
+    
+    nav.navbar {
+       display: none;
+    }  
+    
+    body nav div ul li a {
+        display: none;
+    }
+    
+    div#mepic section h1 pre {
+        display: none;
+    }
+    
+    label, input, #leavemessage, textarea, input[type="submit"], fieldset hr  {
+        display: none;
+    }
+    
+}
+
+/* ZOOM Gallery */
+
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+i.fa.fa-angle-down {
+    text-align: right;
+}
+
+#div1, #div2, #div3, #div4 {
+    margin-bottom: 10px;
+}
+
+#iframe-resp {
+    padding: 30px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+

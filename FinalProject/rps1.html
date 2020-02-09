@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Honor Code: I acknowledge that this code represents my own work: 
+Initials: MJR    
+Date: November 28th, 2018
+-->
+<meta charset="UTF-8" />
+<meta name="author" content="Mason Rich" />
+<meta name="description" content="Final Project" />
+<meta name="keywords" content="Final, project, CS 2350" />
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+<!-- My style sheet -->
+<link href="styles/rpsstyles.css" rel="stylesheet" type="text/css" />
+    
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Frijole|Metal+Mania|Roboto|Shadows+Into+Light" rel="stylesheet">
+
+<title>Classic</title> 
+</head>      
+   <body>
+            <div class="jumbotron">
+                <h1><font id="fontRock">Rock</font>, <font id="fontPaper">Paper</font>, <font id="fontScissors">Scissors</font></h1>
+                <h4>(Classic Mode)</h4>
+                <h4 id="countRounds"></h4>
+            </div>
+              
+              <h3 id="makeChoice"></h3>
+
+       <div class="row">
+           
+           <!-- Rock image with bootstrap -->
+          <section class="col-sm-4 col-md-4 col-xs-12 col-lg-4 col-xl-4">
+             <img src="images/rock.png" name="userRock" id="userRock"class="center-block">
+          </section>
+
+          <!-- Paper image with bootstrap -->
+          <section class="col-sm-4 col-md-4 col-xs-12 col-lg-4 col-xl-4">
+             <img src="images/paper.png" name="userPaper" id="userPaper"class="center-block">
+          </section>
+
+          <!-- Scissors image with bootstrap -->
+          <section class="col-sm-4 col-md-4 col-xs-12 col-lg-4 col-xl-4">
+             <img src="images/scissors.png" name="userScissors" id="userScissors" class="center-block">
+          </section>
+           
+       </div>
+       <div class="row">
+           
+          <section class="col-sm-6 col-md-6 col-xs-12 col-lg-6 col-xl-6"></section>
+          <section class="col-sm-6 col-md-6 col-xs-12 col-lg-6 col-xl-6"></section>
+           
+          <section class="col-sm-6 col-md-6 col-xs-12 col-lg-6 col-xl-6">
+             <h3 id="userChoiceText"></h3>
+             <div id="userPic"></div>
+          </section>
+           
+          <section class="col-sm-6 col-md-6 col-xs-12 col-lg-6 col-xl-6">
+             <h3 id="compChoiceText"></h3>
+             <div id="compPic"></div>
+          </section>
+           
+          <section class="col-sm-6 col-md-6 col-xs-12 col-lg-6 col-xl-6"></section>
+          <section class="col-sm-6 col-md-6 col-xs-12 col-lg-6 col-xl-6"></section>
+       
+       </div>
+       
+       <!-- display game over -->
+       <h2 id="gameOver"></h2>
+       
+       <hr>
+       
+       <!-- display winner/loser here -->
+       <h3 id="results"></h3>
+       
+       <!-- Display score here -->
+       <h3 id="score"></h3>
+       
+       <hr>
+       
+       <!-- Play again -->
+       <button onclick="nextRound()" class="center-block" id="nextRound">Next Round</button>       
+       <button onclick="window.location.reload()" class="center-block">Play Again</button>
+       <button onclick="window.location.href='index.html'" class="center-block">Go Home</button>
+       
+   <!-- My scripts -->   
+   <script src="scripts/rps1.js"></script>
+   </body>
+
+</html>

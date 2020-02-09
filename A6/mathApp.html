@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Honor Code: I acknowledge that this code represents my own work: 
+Initials: MJR   
+Date: October 19, 2018
+-->
+<meta charset="UTF-8" />
+<meta name="author" content="Mason Rich" />
+<meta name="description" content="mathApp JS assignment 1" />
+<meta name="keywords" content="mathApp, JS, JS assignment 1, CS 2350" />
+
+<title>Math App</title> 
+    <script>
+        
+        //Global variables for program
+        
+        var result
+        var questionCount = 0
+        //functions for the program
+        
+        //name prompt function
+        function namePrompt() {
+            name = prompt("What is your name?")
+            console.log("Welcome, " + name + "! Thank you for visiting the Math Application.")
+        }
+        
+        //addiction function
+        function generateAddition() {
+            questionCount++
+            var num1 = Math.floor(Math.random()*100)
+            var num2 = Math.floor(Math.random()*100)
+            result = num1 + num2 
+            var userResult = prompt("What is " + num1 + " + " + num2 +"?")
+            
+            if (userResult == result) {
+                console.log(questionCount + ". That is correct!")
+            }
+            else {
+                console.log(questionCount + ". That is incorrect.")
+            }
+        }
+        
+        //subtraction function
+        function generateSubtraction() {
+            questionCount++
+            var num1 = Math.floor(Math.random()*100)
+            var num2 = Math.floor(Math.random()*100)
+            result = num1 - num2 
+            var userResult = prompt("What is " + num1 + " - " + num2 +"?")
+            if (userResult == result) {
+                console.log(questionCount + ". That is correct!")
+            }
+            else {
+                console.log(questionCount + ". That is incorrect.")
+            }
+        }
+        
+        //multiplication function
+        function generateMultiplication() {
+            questionCount++
+            var num1 = Math.floor(Math.random()*10)
+            var num2 = Math.floor(Math.random()*10)
+            result = num1 * num2
+            var userResult = prompt("What is " + num1 + " * " + num2 +"?")
+            if (userResult == result) {
+                console.log(questionCount + ". That is correct!")
+            }
+            else {
+                console.log(questionCount + ". That is incorrect.")
+            }
+        }
+        
+        //division function
+        function generateDivision() {
+            questionCount++
+            var num1 = Math.floor(Math.random()*100)
+            var num2 = Math.floor((Math.random()*100)+1)
+            
+            while (num1 / num2 % 1 != 0){
+                var num1 = Math.floor(Math.random()*100) 
+                var num2 = Math.floor((Math.random()*100)+1)
+            }
+            result = num1 / num2
+            var userResult = prompt("What is " + num1 + " / " + num2 +"?")
+            if (userResult == result) {
+                console.log(questionCount + ". That is correct!")
+            }
+            else {
+                console.log(questionCount + ". That is incorrect.")
+            }
+            
+        } 
+        
+        /* function divideNumbers(){
+        var num1 = Math.floor(Math.random()*100)
+        var num2 = Math.floor((Math.random()*100)+1)
+        
+        while((num1/num2) % 1 != 0){
+            num1 = Math.floor(Math.random()*100)
+            num2 = Math.floor((Math.random()*100)+1)
+        }*/
+    
+    </script>
+</head>      
+   <body onload="namePrompt()">
+       <input type="button" value="+" onclick="generateAddition()">
+       <input type="button" value="-" onclick="generateSubtraction()">
+       <input type="button" value="*" onclick="generateMultiplication()">
+       <input type="button" value="/" onclick="generateDivision()">
+   </body>
+
+</html>

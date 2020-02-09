@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Honor Code: I acknowledge that this code represents my own work: 
+Initials: MJR    
+Date: October 29, 2018
+-->
+<meta charset="UTF-8" />
+<meta name="author" content="Mason Rich" />
+<meta name="description" content="Assignment 7" />
+<meta name="keywords" content="Assignment 7, CS 2350, javascript" />
+
+<title>Assignment 7 part I</title> 
+    
+    <script>
+        function displayFullMessage()
+        {
+            //declare all the variables of the function
+            var d = new Date();
+            var hour = d.getHours();
+            var minute = d.getMinutes();
+            var day = d.getDay();
+            var date = d.getDate();
+            var month = d.getMonth();
+            var year = d.getFullYear();
+            var dayOfWeek = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+            var monthOfYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            var zero = "0" 
+            
+            //set the time of day according to the hour
+            if (hour < 12)
+            {
+                var timeOfDay = "Good morning, "
+                var ampm = "AM"
+            }
+            else if (hour < 18)
+            {
+                var timeOfDay = "Good afternoon, " 
+                var ampm = "PM"
+            }
+            else
+            {
+                var timeOfDay = "Good evening, "
+                var ampm = "PM"
+            }
+            
+            //if it is exactly 12:00
+            if(hour == 0)
+            {
+                hour = 12
+            }
+            
+            //not military time
+            if(hour > 12)
+            {
+                hour = hour - 12
+            }
+            
+            if(hour < 10)
+            {
+                 
+                hour = zero + hour
+            }
+            
+            if (minute < 10)
+            {
+                minute = zero + minute
+            }
+            
+            //call the function and concatenate strings
+            window.alert(timeOfDay + "it is " + hour + ":" + minute + " " + ampm + " on " + dayOfWeek[day] + ", " + monthOfYear[month] + " " + date + ", " + year + ".")
+
+        }
+        
+    </script>
+    
+</head>      
+   <body>
+       <Button onclick="displayFullMessage()">Click here to display date</Button>
+       <p><a href="jsLoopDemo.html">Loop Demo</a></p> 
+       <p><a href="shoppingCart.html">Shopping Cart Demo</a></p>
+      
+   </body>
+
+</html>

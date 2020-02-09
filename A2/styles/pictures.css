@@ -1,0 +1,13 @@
+h1 {
+    color: white;
+    background-color: cadetblue;
+    margin: 0px; 
+    border-bottom: 3px solid burlywood;
+   }
+
+h2, h3 {
+        color: white;
+        background-color:cadetblue;
+        padding-left: 5px;
+        letter-spacing: 7px;
+       }

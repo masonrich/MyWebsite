@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Honor Code: I acknowledge that this code represents my own work: 
+Initials: MJR    
+Date: December 4th, 2018
+-->
+<meta charset="UTF-8" />
+<meta name="author" content="Mason Rich" />
+<meta name="description" content="Final Project" />
+<meta name="keywords" content="Final, project, CS 2350" />
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+<!-- My style sheet -->
+<link href="styles/rpsstyles.css" rel="stylesheet" type="text/css" />
+    
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Frijole|Metal+Mania|Roboto|Shadows+Into+Light" rel="stylesheet">
+
+<title>Countdown</title> 
+</head>      
+   <body>
+       
+        <div class="jumbotron">
+           <h1><font id="fontRock">Rock</font>, <font id="fontPaper">Paper</font>, <font id="fontScissors">Scissors</font></h1>
+           <h4>(Countdown Mode)</h4>
+        </div>
+           
+       <div class="row">
+           <!--Display Timer -->
+           <section class="col-sm-3 col-md-3 col-xs-12 col-lg-3 col-xl-3">
+              <h2>Time:</h2>
+              <p><span id="showTime">30</span></p>
+           </section>
+           
+           <!-- Empty Space -->
+          <section class="col-sm-3 col-md-3 col-xs-12 col-lg-3 col-xl-3"></section>
+
+          <!-- Computer Choice -->
+          <section class="col-sm-3 col-md-3 col-xs-12 col-lg-3 col-xl-3">
+              
+             <!-- Display Computer's choice text -->
+             <h3 id="compChoiceText"></h3>
+              
+             <!-- Computer decides whether you should win or lose --> 
+             <h3 id="winlose"></h3>
+       
+             <!-- Display computer pic here -->
+             <div id="compPic"></div>
+              
+             <hr>
+              
+             <!-- Display High Score -->
+             <h3 id="highscore"></h3>
+              
+             <hr>
+              
+          </section>
+
+          <!-- Empty Space -->
+          <section class="col-sm-3 col-md-3 col-xs-12 col-lg-3 col-xl-3"></section>
+    
+       </div>
+
+       <!-- Bottom Row where player chooses rock, paper or scissors -->
+       <div class="row">
+           
+           <!--Display Score -->
+           <section class="col-sm-3 col-md-3 col-xs-12 col-lg-3 col-xl-3">
+              <h2>Score:</h2>
+              <p><span id="showScore">0</span></p>
+           </section>
+           
+           <!-- Rock image with bootstrap -->
+          <section class="col-sm-3 col-md-3 col-xs-12 col-lg-3 col-xl-3">
+             <img src="images/rock.png" name="userRock" id="userRock"class="center-block">
+          </section>
+
+          <!-- Paper image with bootstrap -->
+          <section class="col-sm-3 col-md-3 col-xs-12 col-lg-3 col-xl-3">
+             <img src="images/paper.png" name="userPaper" id="userPaper"class="center-block">
+          </section>
+
+          <!-- Scissors image with bootstrap -->
+          <section class="col-sm-3 col-md-3 col-xs-12 col-lg-3 col-xl-3">
+             <img src="images/scissors.png" name="userScissors" id="userScissors" class="center-block">
+          </section>
+           
+       </div>
+
+       <!-- display winner/loser here -->
+       <h3 id="results"></h3>
+       
+       <!-- Display score here -->
+       <h3 id="score"></h3>
+       
+       <!-- Play again -->
+       <button id="playAgain" class="center-block">Play again</button>
+       <button onclick="window.location.href='index.html'" class="center-block">Go Home</button>
+       
+   <!-- My scripts -->   
+   <script src="scripts/rps2.js"></script>
+   </body>
+
+</html>

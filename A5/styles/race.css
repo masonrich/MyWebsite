@@ -1,0 +1,209 @@
+/*general style for everything*/
+
+* {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* style for the header and image to take up 20% of page width */
+
+header {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 500px;
+}
+
+header img {
+    width: 100%;
+}
+
+/* Style to push the "Ride the Century" article to the right hand side of the page */
+
+article {
+    display: block;
+    float: left;
+    width: 29%;
+    margin-left: 1%;
+    background-color: rgb(215, 181, 151);
+}
+
+/* Styles for the scrollbar on the bottom of the page with the pictures and background colors, etc. */
+
+figure {
+    display: block;
+    float: left;
+    clear: left;
+    margin-left: 21%;
+    width: 79%;
+    background-color: rgb(149, 91, 42);
+}
+
+figure div {
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+figure div img {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+figcaption {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    font-size: 80%;
+    font-style: italic;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Styles for the article including header group, h1, h2 and paragraphs. Include the picture in the bottom right of the heading */
+
+article hgroup {
+    display: block;
+    background-color: rgb(189, 131, 82);
+    background-image: url(../images/alisha.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    color: rgb(215, 181, 151);
+    margin-bottom: 10px;
+    height: 60px;
+    text-indent: 20px;
+}
+
+article hgroup h1 {
+    font-size: 150%;
+}
+
+article hgroup h2 {
+    font-size: 110%;
+}
+
+article p {
+    font-size: 90%;
+    margin: 15px;
+}
+
+section {
+    display: block;
+}
+
+/* Styles for all the main section of the page, including the h1, p and unordere list */
+
+#main {
+    float: left;
+    clear: left;
+    margin-left: 21%;
+    margin-top: 20px;
+    width: 49%;
+}
+
+#main h1 {
+    color: rgb(189, 131, 82);
+    font-size: 180% normal;
+    letter-spacing: 5px;
+}
+
+#main p {
+    margin: 15px;
+}
+
+#main ul {
+    list-style-type: disc;
+    margin: 25px;
+}
+
+#main ul li {
+    margin-bottom: 10px;
+}
+
+/* General nav rules to display as blocks and to get rid of underlines */
+
+nav {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/* Horizontal nav bar and styles that goes across the top of the page */
+
+nav.horizontal ul {
+    width: 80%;
+    margin-left: 20%;
+}
+
+nav.horizontal ul li {
+    display: block;
+    float: left;
+    width: 20%;
+    background-color: rgb(49, 38, 31);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 85%;
+}
+
+nav.horizontal a {
+    color: rgb(255, 255, 255);
+}
+
+nav.horizontal a:hover {
+    color: rgb(215, 181, 151);
+}
+
+/* Styles for the vertial list on the left hand side of the page & hover settings */
+
+nav.vertical li {
+    font-size: 85%;
+    list-style-type: none;
+}
+
+nav.vertical li.newgroup {
+    padding-top: 25px;
+}
+
+nav.vertical a {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-indent: 10px;
+}
+
+nav.vertical a:hover {
+    color: rgb(51, 51, 51);
+    outline: 2px solid rgb(215, 181, 151);
+}
+
+/* Main body of the page where there will be a max and min width to restrain page size */
+
+body {
+    position: relative;
+    width: 98%;
+    min-width: 1000px;
+    max-width: 1400px;
+}
+
+/* Aside insert that has rounded edges and takes uop 50% of the main section */
+
+#main aside {
+    display: block;
+    border: 3px solid rgb(149, 91, 42);
+    color: rgb(149, 91, 42);
+    float: right;
+    margin: 10px;
+    width: 50%;
+    border-radius: 30px;
+}
+
+#main aside p {
+    font-size: 90%;
+    margin: 20px;
+}
